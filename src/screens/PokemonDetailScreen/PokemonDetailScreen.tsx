@@ -38,7 +38,7 @@ export const PokemonDetailScreen: React.FC<Props> = ({route, navigation}) => {
 
   const onPressPokemon = useCallback(
     (pokemonId: number) => {
-      navigation.push('Details', {id: pokemonId});
+      navigation.navigate('Details', {id: pokemonId});
     },
     [navigation],
   );
